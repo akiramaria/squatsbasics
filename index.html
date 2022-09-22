@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Squats Basics</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<style>
+			html, body {
+				height: 100%;
+				width: 100%;
+				scroll-behavior: smooth;
+			}
+
+			body {
+				margin: 0;
+			}
+
+			h1{
+				font-family: 'Abril Fatface';
+				font-size: 22px;
+			}
+
+			li{
+				font-family: 'Montserrat';
+				font-size: 22px;
+
+			}
+
+			a{
+				font-family: 'Montserrat';
+				font-size: 20px;
+			}
+
+			aside {
+				position: fixed;
+				top: 50%;
+				left:95%;
+				transform: translate(-50%, -50%);
+			}
+
+			aside ul {
+			  	display: flex;
+			  	flex-direction: column;
+			  	align-items: center;
+			  	list-style-type: none;
+			  	margin: 0;
+			}
+			aside ul li .indicator {
+			  	cursor: pointer;
+			  	margin-top: 1rem;
+			  	display: block;
+			  	height: 10px;
+			  	width: 10px;
+			  	border-radius: 50%;
+			  	background-color: black;
+			  	list-style-image: url(img/iphone.png);
+
+			}
+
+			aside ul li .active {
+			  	transform: scale(1.5);
+			  	transition: transform 200ms ease-in-out;
+			}
+
+			section {
+				min-height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			section:nth-child(odd) {
+			  	background-color: #fbfaf9;
+			}
+			section:nth-child(even) {
+			  	background-color: #e0e0e0;
+			}
+			section h1 {
+				margin: 0;
+				font-family: 'Abril Fatface';
+				font-size: 50px;
+				color: white;
+			}
+
+			.sb-logo{
+			}
+
+			.sb-logo img{
+        		object-fit: contain;
+			}
+
+			.socialmedia a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.socialmedia a:hover{
+				text-decoration: underline;
+			}
+
+			.socialmedia {
+				width: 50%;
+				background-color:#fbfaf9;				
+				float: right;
+				padding-top: 155px;
+			}
+
+			.howto li{
+				list-style-type:circle;
+				z-index: 1;
+			}
+
+			.howto img{
+				float: right;
+				z-index: -1;
+				margin-top: -225px;
+			}
+
+			.termsandconditions h1{
+				z-index: 1;	
+				color: white;
+				position:absolute;
+
+			}
+
+			.termsandconditions img{
+				margin-left: -100px;
+				max-width: 100%;
+			}
+		
+
+		</style>
+	</head>
+
+<body>
+	<main>
+		<section id="first">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+					</div>
+					<div class="col sb-logo" >
+						<img src="img/logo.png" alt="logo">
+					</div>
+					
+					<div class="col socialmedia">
+						<div class="col pb-2">
+						</div>
+						<div class="col pb-2">
+							<img src="img/ig-logo.svg" alt="catalogue" width="30" height="30"> <a href="https://www.instagram.com/squatsbasicsapparel/"> Catalogue</a>
+						</div>
+						<div class="col pb-2">
+							<img src="img/shopee-logo.png" alt="shopee" width="30" height="30"> <a href="https://shopee.co.id/squatsbasics"> Ready stock</a>
+						</div>
+						<div class="col pb-2">
+							<img src="img/tokopedia-logo.png" alt="tokopedia" width="30" height="30"> <a href="https://www.tokopedia.com/squatsbasicsapparel"> Ready stock</a>
+						</div>
+						<div class="col pb-2">
+							<img src="img/whatsapp-logo.png" alt="Whatsapp Squats Basics Apparel" width="30" height="30"><a href="#"> Questions</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="second">
+			<div class="container">
+				<div class="row">
+					<div class="col howto" >
+						<h1 class="mb-3 pt-5">How to order with your own logo </h1>
+						<ol>
+							<li>Choose from the <a href="https://www.instagram.com/squatsbasicsapparel">catalogue</a> </li>
+							<li>Choose where the logo will be located</li>
+							<li>Send over the logos on WhatsApp</li>
+						<ol>
+						<img src="img/addlogo.png" alt="Customize Logo Squats Basics Apparel" max-width="450">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="third">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col ml-1 termsandconditions">
+						<h1>Terms and <br>conditions</h1>
+						<img src="img/bra.jpg" alt="Squats Basics Apparel Bra Terms and Conditions">
+						
+					</div>
+					<div class="col pt-5">
+						<ol>
+							<li>Pre Order 10-16 working days </li>
+							<li>Paid items cannot be cancelled or exchanged </li>
+							<li>Exchanges are allowed only when Squats Basics wrongly send the items' sizes, or colors </li>
+							<li>Minimum order: 50 per item</li>
+							<li>It is advised to consult items sizes before ordering</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside>
+	        <ul>
+	          	<li>
+	            	<a class="indicator active" href="#first"></a>
+	          	</li>
+	          	<li>
+	            	<a class="indicator" href="#second"></a>
+	          	</li>
+	          	<li>
+	            	<a class="indicator" href="#third"></a>
+	          	</li>
+	        </ul>
+    	</aside>
+	</main>
+
+
+	<!-- bullet pagination https://alvarotrigo.com/blog/create-a-slidebar-bullet-navigation-to-smoothly-snap-to-sections/ -->
+
+</body>
+
+	<script src="app.js"></script>
+	<script>
+		const indicators = document.querySelectorAll('a.indicator');
+		const resetCurrentActiveIndicator = () => {
+			const activeIndicator = document.querySelector(".active");
+		 	activeIndicator.classList.remove("active");
+		};
+		indicators.forEach((indicator) => {
+		  	indicator.addEventListener('click', function () {
+		    	resetCurrentActiveIndicator();
+		    	this.classList.add('active');
+		  	});
+		});
+
+		const sections = document.querySelectorAll("section");
+
+		const onSectionLeavesViewport = (section) => {
+		  	const observer = new IntersectionObserver(
+			    (entries) => {
+				    entries.forEach((entry) => {
+				        if (entry.isIntersecting) {
+				          	resetCurrentActiveIndicator();
+				          	const element = entry.target;
+				          	const indicator = document.querySelector(`a[href='#${element.id}']`);
+				          	indicator.classList.add("active");
+				          	return;
+				        }
+				    });
+			    },
+			    {
+			      	root: null,
+			      	rootMargin: "0px",
+			      	threshold: 0.75
+			    }
+			);
+			observer.observe(section);
+		};
+
+		sections.forEach(onSectionLeavesViewport);
+	</script>
+
+</html> 
